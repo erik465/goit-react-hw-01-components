@@ -44,6 +44,8 @@ export const ProfileStats = styled.ul`
     li{
         display : flex;
         flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
     }
 
     li span:nth-child(2){
