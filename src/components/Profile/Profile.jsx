@@ -2,8 +2,8 @@ import { ProfileContainer, ProfileDescription, ProfileStats } from "./Profile.st
 
 export const Profile = ({username, tag, location, avatar, stats}) =>{
     return (
-    <ProfileContainer class="profile">
-    <ProfileDescription class="description">
+    <ProfileContainer className="profile">
+    <ProfileDescription className="description">
       <img
         src={avatar}
         alt="User avatar"
@@ -14,7 +14,7 @@ export const Profile = ({username, tag, location, avatar, stats}) =>{
       <p class="location">{location}</p>
     </ProfileDescription>
   
-    <ProfileStats class="stats">
+    <ProfileStats className="stats">
       <li>
         <span class="label">Followers</span>
         <span class="quantity">{stats.followers}</span>
