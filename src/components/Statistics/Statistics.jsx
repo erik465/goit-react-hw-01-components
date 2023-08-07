@@ -1,9 +1,9 @@
 import { StatisticsContainer, StatisticsList } from "./Statistics.styled"
 
-export const Statistics = ({ data }) => {
+export const Statistics = ({ title, data }) => {
     return (
     <StatisticsContainer class="statistics">
-        <h2 class="title">Upload stats</h2>
+        {title ? <h2 class="title">{title}</h2> : ''}
 
         <StatisticsList class="stat-list">
             <li class="item">
